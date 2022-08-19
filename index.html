@@ -23,12 +23,90 @@
           },
           extend: {
             colors: {
-              dgreen: "#388161",
+              mygreen: "#388161",
+              dgreen: "#1d4d3f",
+              vdgreen: "#0f2e25",
+              lgreen: "#f3fcf4",
+              dgray: "#42474c",
+              mygray: "#b0b6b0",
+              bg1: "#fbf7ed",
             },
+          },
+          fontFamily: {
+            mons: ["Montserrat"],
           },
         },
       };
     </script>
+
+    <!-- ========FONT AWESOME ICON======== -->
+    <script
+      src="https://kit.fontawesome.com/c10c2f8581.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ========FONT======== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body class="font-mons">
+    <nav class="flex flex-row items-center">
+      <div>
+        <img class="w-12" src="./shopify-images/shopify-bag.svg" alt="logo" />
+        <p class="font-monsterrat">shopify</p>
+      </div>
+      <div class="flex flex-row">
+        <a class="text-dgray text-sm lg:text-base" href="#"
+          >Start
+          <img
+            class="w-4 text-dgrey"
+            src="./shopify-images/carret-down.svg"
+            alt="svg"
+          />
+        </a>
+        <a class="text-dgray text-sm lg:text-base" href="#"
+          >Sell
+          <img
+            class="w-4 text-dgrey"
+            src="./shopify-images/carret-down.svg"
+            alt="svg"
+          />
+        </a>
+        <a class="text-dgray text-sm lg:text-base" href="#"
+          >Market
+          <img
+            class="w-4 text-dgrey"
+            src="./shopify-images/carret-down.svg"
+            alt="svg"
+          />
+        </a>
+        <a class="text-dgray text-sm lg:text-base" href="#"
+          >Manage
+          <img
+            class="w-4 text-dgrey"
+            src="./shopify-images/carret-down.svg"
+            alt="svg"
+          />
+        </a>
+        <a class="text-dgray text-sm lg:text-base" href="#">Pricing</a>
+        <a class="text-dgray text-sm lg:text-base" href="#"
+          >Learn
+          <img
+            class="w-4 text-dgrey"
+            src="./shopify-images/carret-down.svg"
+            alt=""
+        /></a>
+        <a class="text-dgray text-sm lg:text-base" href="#">Log in</a>
+      </div>
+      <button class="hidden md:block rounded-md py-2 px-8 bg-mygreen">
+        Try for free
+      </button>
+    </nav>
+  </body>
 </html>
