@@ -17,7 +17,7 @@
 
             md: "768px",
 
-            lg: "1024px",
+            lg: "1111px",
 
             xl: "1280px",
           },
@@ -29,6 +29,7 @@
               lgreen: "#f3fcf4",
               dgray: "#42474c",
               mygray: "#b0b6b0",
+              textgray: "#6e7378",
               bg1: "#fbf7ed",
             },
           },
@@ -55,58 +56,155 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-mons">
-    <nav class="flex flex-row items-center">
-      <div>
-        <img class="w-12" src="./shopify-images/shopify-bag.svg" alt="logo" />
-        <p class="font-monsterrat">shopify</p>
+
+  <!-- ========FAVICON======== -->
+  <link
+    rel="shortcut icon"
+    href="./shopify-images/shopify-favicon.png"
+    type="image/x-icon"
+  />
+  <body class="font-mons bg-bg1 bg-fixed">
+    <nav
+      class="flex flex-row flex-wrap items-center px-16 lg:px-20 py-8 justify-between"
+    >
+      <div class="flex flex-row items-center gap-8">
+        <div
+          class="flex flex-row items-center gap-2 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer"
+        >
+          <img
+            class="w-6 md:w-12"
+            src="./shopify-images/shopify-bag.svg"
+            alt="logo"
+          />
+          <p class="font-extrabold italic text-base md:text-xl lg:text-2xl">
+            shopify
+          </p>
+        </div>
+
+        <div class="hidden lg:flex flex-row gap-8">
+          <a
+            class="flex flex-row items-center lg:gap-1 text-dgray hover:text-black hover:scale-125 transition-all duration-300 ease-in-out text-sm lg:text-base"
+            href="#"
+            >Start
+            <img
+              class="w-4 text-mygrey"
+              src="./shopify-images/carret-down.svg"
+              alt="svg"
+            />
+          </a>
+          <a
+            class="flex flex-row items-center lg:gap-1 text-dgray hover:text-black hover:scale-125 transition-all duration-300 ease-in-out text-sm lg:text-base"
+            href="#"
+            >Sell
+            <img
+              class="w-4 text-mygrey"
+              src="./shopify-images/carret-down.svg"
+              alt="svg"
+            />
+          </a>
+          <a
+            class="flex flex-row items-center lg:gap-1 text-dgray hover:text-black hover:scale-125 transition-all duration-300 ease-in-out text-sm lg:text-base"
+            href="#"
+            >Market
+            <img
+              class="w-4 text-dgrey"
+              src="./shopify-images/carret-down.svg"
+              alt="svg"
+            />
+          </a>
+          <a
+            class="flex flex-row items-center lg:gap-1 text-dgray hover:text-black hover:scale-125 transition-all duration-300 ease-in-out text-sm lg:text-base"
+            href="#"
+            >Manage
+            <img
+              class="w-4 text-dgrey"
+              src="./shopify-images/carret-down.svg"
+              alt="svg"
+            />
+          </a>
+        </div>
       </div>
-      <div class="flex flex-row">
-        <a class="text-dgray text-sm lg:text-base" href="#"
-          >Start
-          <img
-            class="w-4 text-dgrey"
-            src="./shopify-images/carret-down.svg"
-            alt="svg"
-          />
-        </a>
-        <a class="text-dgray text-sm lg:text-base" href="#"
-          >Sell
-          <img
-            class="w-4 text-dgrey"
-            src="./shopify-images/carret-down.svg"
-            alt="svg"
-          />
-        </a>
-        <a class="text-dgray text-sm lg:text-base" href="#"
-          >Market
-          <img
-            class="w-4 text-dgrey"
-            src="./shopify-images/carret-down.svg"
-            alt="svg"
-          />
-        </a>
-        <a class="text-dgray text-sm lg:text-base" href="#"
-          >Manage
-          <img
-            class="w-4 text-dgrey"
-            src="./shopify-images/carret-down.svg"
-            alt="svg"
-          />
-        </a>
-        <a class="text-dgray text-sm lg:text-base" href="#">Pricing</a>
-        <a class="text-dgray text-sm lg:text-base" href="#"
+
+      <div class="flex flex-row gap-3 md:gap-8 items-center">
+        <a
+          class="hidden lg:inline text-dgray text-sm lg:text-base hover:text-black hover:scale-125 transition-all duration-300 ease-in-out"
+          href="#"
+          >Pricing</a
+        >
+        <a
+          class="hidden lg:flex lg:flex-row lg:items-center lg:gap-1 text-dgray text-sm lg:text-base hover:text-black hover:scale-125 transition-all duration-300 ease-in-out"
+          href="#"
           >Learn
           <img
             class="w-4 text-dgrey"
             src="./shopify-images/carret-down.svg"
             alt=""
         /></a>
-        <a class="text-dgray text-sm lg:text-base" href="#">Log in</a>
+        <a
+          class="text-dgray text-sm md:text-base hover:text-black hover:scale-125 transition-all duration-300 ease-in-out"
+          href="#"
+          >Log in</a
+        >
+        <button
+          class="hidden shadow-[2px_4px_10px_#388161] text-base text-white border-solid border-2 border-mygreen hover:shadow-[0px_0px_1px_#388161] hover:text-mygreen hover:bg-transparent hover:scale-110 lg:block rounded-md py-2 px-8 bg-mygreen transition-all duration-300 ease-in-out"
+        >
+          Try for free
+        </button>
+        <img
+          class="w-6 md:w-8 lg:hidden"
+          src="./shopify-images/nav-icon.png"
+          alt="ham"
+        />
       </div>
-      <button class="hidden md:block rounded-md py-2 px-8 bg-mygreen">
-        Try for free
-      </button>
     </nav>
+
+    <!-- ==========SECTION-1============ -->
+    <section
+      class="flex gap-8 flex-col items-start lg:flex-row lg:justify-center px-16 lg:px-20 mt-20"
+    >
+      <div
+        class="flex flex-col justify-center items-center sm:items-start gap-8 lg:w-1/2"
+      >
+        <h1
+          class="w-full sm:w-[75%] lg:w-[90%] text-dgreen text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tighter"
+        >
+          The easiest way to sell online in India
+        </h1>
+        <p
+          class="w-full sm:w-[75%] lg:w-[90%] text-textgray text-base lg:text-lg"
+        >
+          Try one of the most powerful platforms on the market for free. No
+          technical knowledge needed.
+        </p>
+        <form
+          class="flex flex-col md:flex-row items-center justify-center gap-3"
+          action=""
+        >
+          <input
+            class="w-full bg-white border-solid border-[1px] border-black py-4 px-12 rounded-md"
+            type="email"
+            placeholder="Enter your email address"
+          />
+          <button
+            class="w-full md:w-1/2 text-base text-white border-solid border-2 border-mygreen hover:text-mygreen hover:bg-transparent hover:scale-110 rounded-md py-4 px-8 bg-mygreen transition-all duration-300 ease-in-out"
+          >
+            Try for free
+          </button>
+        </form>
+        <p class="text-xs w-full sm:w-[75%] lg:w-[90%]">
+          Try Shopify free for 14 days, no credit card required. By entering
+          your email, you agree to receive marketing emails from Shopify.
+        </p>
+      </div>
+      <div class="lg:w-1/2">
+        <video
+          class=""
+          autoplay
+          loop
+          muted
+          src="./shopify-images/hero.mp4"
+        ></video>
+      </div>
+    </section>
   </body>
 </html>
